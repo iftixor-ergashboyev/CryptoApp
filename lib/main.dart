@@ -1,3 +1,4 @@
+import 'package:crypto_app/page/access.dart';
 import 'package:crypto_app/page/main_page.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,7 @@ class CryptoApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true
       ),
-      home: const MainPage(),
+      home: const Access(),
     );
   }
 }
