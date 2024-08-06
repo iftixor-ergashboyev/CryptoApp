@@ -30,18 +30,22 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: CupertinoColors.white,
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: CupertinoColors.white,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.rectangle_3_offgrid),
-
+            label: "Home"
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.currency_exchange_rounded),
+            label: "Trade"
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
+            label: "Profile"
           ),
         ],
         currentIndex: _selectedIndex,

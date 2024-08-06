@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class TradePage extends StatefulWidget {
@@ -10,6 +11,8 @@ class TradePage extends StatefulWidget {
 class _TradePageState extends State<TradePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: CupertinoColors.white,
+    );
   }
 }
