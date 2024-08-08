@@ -1,3 +1,4 @@
+import 'package:crypto_app/page/settings_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -25,7 +26,11 @@ class _HomePageState extends State<HomePage> {
               children: [
                 Text("Portfolio", style: GoogleFonts.urbanist(fontSize: 30, fontWeight: FontWeight.bold, color: CupertinoColors.black)),
                 IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                          CupertinoPageRoute(builder: (context) => SettingsPage())
+                      );
+                    },
                     icon: Icon(Icons.settings, color: Colors.grey)
                 )
               ],

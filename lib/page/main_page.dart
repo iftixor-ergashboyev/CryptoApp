@@ -1,7 +1,6 @@
 import 'package:crypto_app/page/profile_page.dart';
 import 'package:crypto_app/page/trade_page.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; // `Cupertino` dan `Material` ga o'zgartiring
 
 import 'home_page.dart';
 
@@ -30,22 +29,22 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: CupertinoColors.white,
+      backgroundColor: Colors.white, // Rangni o'zgartirdim
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: CupertinoColors.white,
+        backgroundColor: Colors.white, // Rangni o'zgartirdim
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.rectangle_3_offgrid),
-            label: "Home"
+              icon: Icon(Icons.home), // Ikonani yangiladim
+              label: "Home"
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.currency_exchange_rounded),
-            label: "Trade"
+              icon: Icon(Icons.currency_exchange), // Ikonani yangiladim
+              label: "Trade"
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: "Profile"
+              icon: Icon(Icons.person),
+              label: "Profile"
           ),
         ],
         currentIndex: _selectedIndex,
